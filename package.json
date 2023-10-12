@@ -1,0 +1,17 @@
+{
+  "name": "stylelint-autofix-test",
+  "version": "1.0.0",
+  "description": "test to show that stylelint autofixes grid-template with repeat() incorrectly",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint 'styles/**/*' --config .stylelintrc.json",
+    "lint:fix": "stylelint 'styles/**/*' --config .stylelintrc.json --fix"
+  },
+  "author": "paceaux (Frank M. Taylor)",
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-order": "^6.0.3"
+  }
+}

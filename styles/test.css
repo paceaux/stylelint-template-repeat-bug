@@ -1,0 +1,21 @@
+/*
+
+lint:fix will change this to
+
+
+.grid_container {
+    grid-template: "left center center right" auto / repeat(3, 1fr);
+}
+
+which is invalid. 
+
+It should be 
+grid-template: "left center right" auto / 1fr 1fr 1fr;
+
+*/
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left center right";
+}
